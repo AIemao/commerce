@@ -16,6 +16,9 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./test/setup.ts'],
     environment: 'happy-dom',
+    onConsoleLog(log) {
+      if (log.includes("React Router Future Flag Warning")) return false;
+    },
   },
 } as UserConfig & {
   test: InlineConfig
