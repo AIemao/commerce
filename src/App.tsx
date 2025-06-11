@@ -16,7 +16,7 @@ export function App() {
         <Helmet titleTemplate="%s | commerce" />
          <Toaster richColors />
          <QueryClientProvider client={queryClient}>
-           <RouterProvider router={router} />
+           <RouterProvider router={router} future={{ v7_startTransition: true }} />
          </QueryClientProvider>
       </ThemeProvider>
     </HelmetProvider>
