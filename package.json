@@ -25,7 +25,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "commerce": "file:",
-    "date-fns": "^4.1.0",
+    "date-fns": "^3.2.0",
     "localforage": "^1.10.0",
     "lucide-react": "^0.295.0",
     "match-sorter": "^6.3.1",
@@ -43,6 +43,7 @@
     "zod": "^3.25.48"
   },
   "devDependencies": {
+    "@playwright/test": "^1.53.0",
     "@rocketseat/eslint-config": "^2.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
