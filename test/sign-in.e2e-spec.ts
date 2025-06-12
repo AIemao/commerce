@@ -8,8 +8,8 @@ test('sign in successfully', async ({ page }) => {
 
   const toast = page.getByText('Enviamos um link de acesso')
 
-  expect(toast).toBeVisible({ timeout: 10000 })
-  await page.waitForTimeout(2000) // Wait for the toast to appear
+  await expect(toast).toBeVisible({ timeout: 10000 })
+  // await page.waitForTimeout(2000) // Wait for the toast to appear
 })
 
 test('sign in with wrong credentials', async ({ page }) => {
@@ -20,7 +20,7 @@ test('sign in with wrong credentials', async ({ page }) => {
 
   const toast = page.getByText('Erro ao realizar login. Tente')
 
-  expect(toast).toBeVisible({ timeout: 10000 })
+  await expect(toast).toBeVisible({ timeout: 10000 })
   await page.waitForTimeout(2000) // Wait for the toast to appear
 })
 
