@@ -23,7 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-readme.md
+readme copy.md
+linkedin.md
 
 # Playwright
 /test-results/
